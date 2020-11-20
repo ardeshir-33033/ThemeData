@@ -13,8 +13,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      // theme: DinaTheme().dinaThemeData,
-      theme: ThemeData(fontFamily: 'IRANSans'),
+       theme: DinaTheme().getTheme(),
+//      theme: ThemeData(fontFamily: 'IRANSans'),
       home: MyHomePage(),
     );
   }
@@ -33,12 +33,26 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       body: Column(children: [
         FlatButton(onPressed: (){}, child: Text("button"),),
-        Text("text for test"),
-        Container(
-          height: 200,
-          child: ListView(children: [
-            ListTile(title: Text("title"),subtitle: Text("sub title"),),
-            ],),
+        Text("تکست123"),
+        Column(
+          children: [
+            Container(
+              height: 200,
+              child: ListView(children: [
+                ListTile(title: Text("title"),subtitle: Text("sub title"),),
+                ],),
+            ),
+            Card(
+             child: Container(
+               child: RaisedButton(
+                 onPressed: (){},
+                 child: Text(
+                   'هی یو'
+                 ),
+               ),
+             ),
+            )
+          ],
         )
       ],),
     );

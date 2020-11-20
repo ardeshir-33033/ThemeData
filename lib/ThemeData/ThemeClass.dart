@@ -10,7 +10,7 @@ Color secondaryColor = Color(0xFF404040);
 class DinaTheme extends ChangeNotifier {
 
   ThemeData dinaThemeData = ThemeData(
-      brightness: Brightness.dark,
+      brightness: Brightness.light,
       primarySwatch: Colors.grey,
       primaryColor: mainColor,
       primaryColorBrightness: Brightness.dark,
